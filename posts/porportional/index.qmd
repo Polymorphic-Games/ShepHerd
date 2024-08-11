@@ -1,0 +1,374 @@
+---
+title: "Does Proportional Tournament Selection Work?"
+author: "Barrie Robison"
+date: "2024-08-11"
+categories: [Tournament Selection, Testing]
+echo: false
+---
+
+
+
+## Shep.Herd Evolutionary Model Analysis
+
+```{r}
+library(tidyverse)
+
+safe_read_csv <- function(file) {
+  tryCatch(
+    list(result = read_csv(file, show_col_types = FALSE) %>%
+           rename_with(~ str_replace_all(., " ", ".")),
+         error = NULL),
+    error = function(e) list(result = NULL, error = e)
+  )
+}
+
+# Read all CSV files and combine them into a single dataframe
+allfiles <- list.files(pattern = "*.csv", full.names = TRUE) %>%
+  map_df(function(file) {
+    result <- safe_read_csv(file)
+    if (is.null(result$error)) {
+      # Extract characters 6 through 9 from the file name
+      layout_value <- substr(basename(file), 4, 7)
+      tournament<- substr(basename(file), 1, 3)
+      tower <- substr(basename(file), 8,10)
+      
+      # Combine the data with file and layout columns
+      result$result %>%
+        mutate(file = file, layout = layout_value,
+               tournament = tournament,
+               tower = tower)
+    } else {
+      warning(paste("Error reading file:", file, "\n", result$error))
+      return(NULL)
+    }
+  })
+# Check if allfiles is empty
+if (nrow(allfiles) == 0) {
+  stop("No data was successfully read from the CSV files.")
+}
+
+# Process the combined dataframe
+allfiles <- allfiles %>%
+  mutate(
+    Wave.Number = as.numeric(Wave.Number),
+    Unique.Slime.ID = paste(Wave.Number, Slime.ID, sep = "."),
+    Unique.Parent.One = paste(Wave.Number - 1, Parent.One, sep = "."),
+    Unique.Parent.Two = paste(Wave.Number - 1, Parent.Two, sep = ".")
+  ) %>%
+  pivot_longer(
+    cols = c(Unique.Parent.One, Unique.Parent.Two),
+    names_to = "parent_type",
+    values_to = "parent_id"
+  ) %>%
+  group_by(parent_id) %>%
+  mutate(offspring_count = n()) %>%
+  ungroup() %>%
+  filter(parent_id != "-1.N/A") %>%
+  select(-parent_type) %>%
+  distinct()
+
+
+
+```
+
+## Visualize Basic Trait Patterns {.tabset}
+
+```{r}
+sumstats <- allfiles %>%
+  group_by(file, Wave.Number, tournament, tower)%>%
+  summarise(meanSpeed = mean(Speed.Trait),
+            meanTower = mean(Tower.Attraction.Trait),
+            meanTurn = mean(Turn.Rate.Trait),
+            meanPersonal = mean(Slime.Optimal.Distance.Trait),
+            Main.Blaster = sum(Main.Type == "Blaster"),
+            Main.Ice = sum(Main.Type == "Ice"),
+            Sec.Blaster = sum(Secondary.Type == "Blaster"),
+            Sec.Ice = sum(Secondary.Type == "Ice"))%>%
+  ungroup()
+
+
+
+
+```
+
+::: {.panel-tabset}
+
+## Speed
+
+```{r}
+
+
+#| fig-cap: "Change in the Speed.Trait value over time."
+ggplot(allfiles, aes(x= Wave.Number, y = Speed.Trait))+
+  geom_jitter(data = allfiles, aes(x=Wave.Number, y = Speed.Trait),
+              alpha = 0.1)+
+  geom_smooth(data = sumstats, aes(x= Wave.Number, y = meanSpeed))+
+  facet_grid(tournament~file)
+```
+
+## Turn Rate
+
+```{r}
+#| fig-cap: "Change in the Turn.Rate.Trait value over time."
+ggplot(allfiles, aes(x= Wave.Number, y = Turn.Rate.Trait))+
+  geom_jitter(data = allfiles, aes(x=Wave.Number, y = Turn.Rate.Trait),
+              alpha = 0.1)+
+  geom_smooth(data = sumstats, aes(x= Wave.Number, y = meanTurn))+
+  facet_grid(tournament~file)
+```
+
+## Personal Space
+
+```{r}
+#| fig-cap: "Change in the Slime.Distance.Trait value over time."
+ggplot(allfiles, aes(x= Wave.Number, y = Slime.Optimal.Distance.Trait))+
+  geom_jitter(data = allfiles, aes(x=Wave.Number, y = Slime.Optimal.Distance.Trait),
+              alpha = 0.1)+
+  geom_smooth(data = sumstats, aes(x= Wave.Number, y = meanPersonal))+
+  facet_grid(tournament~file)
+```
+
+## Tower Avoidance
+
+```{r}
+#| fig-cap: "Change in the Tower.Distance.Trait value over time."
+ggplot(allfiles, aes(x= Wave.Number, y = Tower.Attraction.Trait))+
+  geom_jitter(data = allfiles, aes(x=Wave.Number, y = Tower.Attraction.Trait),
+              alpha = 0.1)+
+  geom_smooth(data = sumstats, aes(x= Wave.Number, y = meanTower))+
+  facet_grid(tournament~file)
+```
+
+:::
+
+## Visualize Basic Type Patterns 
+
+
+::: {.panel-tabset}
+
+## Main Slime Type
+
+```{r}
+#| fig-cap: "Change in the frequency of Main Type over time."
+
+
+# Assuming your data frame is named 'allfiles'
+# Step 1: Summarize the data to get counts of Main.Type for each Wave.Number
+summary_types <- allfiles %>%
+  group_by(Wave.Number, Main.Type, file, tournament, tower) %>%
+  summarise(count = n()) %>%
+  ungroup()
+
+# Step 2: Create the stacked bar chart
+ggplot(summary_types, aes(x = factor(Wave.Number), y = count, fill = Main.Type)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Stacked Bar Chart of Main.Type Across Wave.Numbers",
+       x = "Wave Number",
+       y = "Count",
+       fill = "Main Type") +
+  theme_minimal()+
+  facet_grid(tournament~file)
+
+```
+
+## Secondary Slime Type
+
+```{r}
+#| fig-cap: "Change in the frequency of Secondary Type over time."
+
+
+# Assuming your data frame is named 'allfiles'
+# Step 1: Summarize the data to get counts of Main.Type for each Wave.Number
+summary_types <- allfiles %>%
+  group_by(Wave.Number, Secondary.Type, file, tournament, tower) %>%
+  summarise(count = n()) %>%
+  ungroup()
+
+# Step 2: Create the stacked bar chart
+ggplot(summary_types, aes(x = factor(Wave.Number), y = count, fill = Secondary.Type)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Stacked Bar Chart of Secondary.Type Across Wave.Numbers",
+       x = "Wave Number",
+       y = "Count",
+       fill = "Main Type") +
+  theme_minimal()+
+  facet_grid(tournament~file)
+
+```
+
+:::
+
+
+## Fitness Analysis
+
+
+
+
+```{r}
+
+
+
+fit_ranked <- allfiles %>%
+  group_by(file, Wave.Number) %>%
+  mutate(fitrank = rank(Sheep.Distance.Fitness, ties.method = "min")) %>%
+  mutate(fitscale = scale(Sheep.Distance.Fitness))%>%
+  ungroup()
+
+```
+
+::: {.panel-tabset}
+
+## Raw Fitness
+
+```{r}
+ggplot(allfiles, aes(x = as.factor(Wave.Number), y = Sheep.Distance.Fitness, color = offspring_count, alpha = 0.01)) + 
+  geom_jitter() +
+  theme(legend.position = "none")+
+  facet_grid(tournament~file)
+
+```
+
+## Log Fitness
+
+```{r}
+ggplot(allfiles, aes(x = as.factor(Wave.Number), y = log10(Sheep.Distance.Fitness), color = offspring_count, alpha = 0.01)) + 
+  geom_jitter() +
+  theme(legend.position = "none")+
+  facet_grid(tournament~file)
+
+```
+
+
+:::
+fitness <- ggplot(fit_ranked%>%
+         filter(Wave.Number < max(Wave.Number)), 
+       aes(x = Sheep.Distance.Fitness, y = offspring_count))+
+  geom_point(aes(color = Speed.Trait))+
+  geom_smooth(method = "lm")+
+  facet_grid(Wave.Number~file)
+
+
+ggsave(fitness, file = "fitness.png", height = 12, width =4)
+
+fitnessrank <- ggplot(fit_ranked%>%
+         filter(Wave.Number < max(Wave.Number)), 
+       aes(x = fitrank, y = offspring_count))+
+  geom_point(aes(color = Speed.Trait))+
+  geom_smooth(method = "lm")+
+  facet_grid(Wave.Number~file)
+
+
+ggsave(fitnessrank, file = "fitnessrank.png", height = 12, width =4)
+
+speed <- ggplot(fit_ranked%>%
+         filter(Wave.Number < max(Wave.Number)),
+       aes(x = Speed.Trait, y = offspring_count))+
+  geom_point(aes(color = Main.Type))+
+  geom_smooth(method = "lm")+
+  facet_grid(Wave.Number~file)
+
+
+ggsave(speed, file = "speed.png", height = 12, width =4)
+
+```
+
+```{r}
+ggplot(fit_ranked, aes(x = Speed.Trait)) +
+  geom_histogram(data = subset(fit_ranked, Wave.Number == 8), 
+                 aes(y = ..density..), 
+                 fill = "lightgray", 
+                 color = "black", 
+                 alpha = 0.7) +
+  geom_density(data = subset(fit_ranked, Wave.Number %in% 0:8), 
+               aes(color = factor(Wave.Number))) +
+  scale_color_discrete(name = "Wave Number") +
+  labs(title = "Speed Trait Distribution",
+       x = "Speed Trait",
+       y = "Density") +
+  theme_minimal()+
+  facet_grid(~file)
+
+ggplot(fit_ranked, aes(x = Speed.Trait)) +
+  geom_histogram( aes(y = ..density..), 
+                 fill = "lightgray", 
+                 color = "black", 
+                 alpha = 0.7) +
+
+  labs(title = "Speed Trait Distribution",
+       x = "Speed Trait",
+       y = "Density") +
+  theme_minimal()+
+  facet_grid(Wave.Number~file)
+
+
+ggplot(fit_ranked, aes(x = Sheep.Distance.Fitness)) +
+  geom_histogram(data = subset(fit_ranked, Wave.Number == 4), 
+                 aes(y = ..density..), 
+                 fill = "lightgray", 
+                 color = "black", 
+                 alpha = 0.7) +
+  geom_density(data = subset(fit_ranked, Wave.Number %in% 0:3), 
+               aes(color = factor(Wave.Number))) +
+  scale_color_discrete(name = "Wave Number") +
+  labs(title = "Offfspring Distribution",
+       x = "Speed Trait",
+       y = "Density") +
+  theme_minimal()
+```
+
+
+```{r}
+#| eval: false
+
+
+library(brms)
+
+formula <- "offspring_count ~ speedscale + file + Main.Type + (1|Wave.Number)"
+
+# gaussianmodel <- brm(
+#   formula = formula,
+#   data = fit_ranked,
+#   family = gaussian(),
+#   prior = c(
+#     prior(normal(0, 1), class = b),
+#     prior(cauchy(0, 2), class = sd)
+#   ),
+#   chains = 4,
+#   iter = 2000,
+#   warmup = 1000
+# )
+
+zeromodel <- brm(
+  formula = formula,
+  data = fit_ranked,
+  family = zero_inflated_negbinomial(),
+  prior = c(
+    prior(normal(0, 1), class = b),
+    prior(cauchy(0, 2), class = sd)
+  ),
+  chains = 4,
+  iter = 2000,
+  warmup = 1000
+)
+
+
+```
+
+
+```{r}
+#| eval: false
+
+
+# summary(gaussianmodel)
+# posterior <- as.data.frame(gaussianmodel)
+# hist(posterior$b_fitscale, main="Posterior Distribution of Selection Gradient", xlab="Selection Gradient")
+
+
+summary(zeromodel)
+posterior <- as.data.frame(zeromodel)
+hist(posterior$b_speedscale, main="Posterior Distribution of Selection Gradient", xlab="Selection Gradient")
+
+
+```
+
+Since this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.
