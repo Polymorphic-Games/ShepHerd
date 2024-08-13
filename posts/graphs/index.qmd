@@ -22,6 +22,8 @@ df = pd.read_csv('p25curlblast4.csv')
 
 # Filter the DataFrame for Wave Number = 0
 df_wave_0 = df[df[' Wave Number'] == 0]
+
+df_wave_4 = df[df[' Wave Number'] == 4]
 ```
 
 ## After Generation 0
@@ -152,7 +154,7 @@ print(df_wave_0[[' Speed Trait', ' Tower Attraction Trait']].corr())
 
 
 
-26. **What type of relationship appears to exist between Speed Trait and Tower Attraction Trait?**
+1. **What type of relationship appears to exist between Speed Trait and Tower Attraction Trait?**
     - A. Strong positive correlation
     - B. Strong negative correlation
     - C. Weak positive correlation
@@ -163,7 +165,7 @@ print(df_wave_0[[' Speed Trait', ' Tower Attraction Trait']].corr())
 **Explanation:** The scatterplot shows no clear pattern or trend between Speed Trait and Tower Attraction Trait, indicating no clear correlation between these variables.
 </details>
 
-27. **What is the approximate range of values for the Tower Attraction Trait?**
+2. **What is the approximate range of values for the Tower Attraction Trait?**
     - A. 0 to 6
     - B. 0 to 12
     - C. -6 to 6
@@ -172,6 +174,177 @@ print(df_wave_0[[' Speed Trait', ' Tower Attraction Trait']].corr())
 <summary>Click to see the answer</summary>
 **Answer:** C. -6 to 6
 **Explanation:** The y-axis of the scatterplot, which represents the Tower Attraction Trait, appears to range from approximately -6 to 6.
+</details>
+
+3. **On this graph, what does each individual point (circle) represent?**
+    - A. The maximum value of [Trait 1] and [Trait 2] from all previous Generations of slimes.
+    - B. The average values of the Traits for each slime from Generation X.
+    - C. The exact values of [Trait 1] and [Trait 2] for each slime from Generation X.
+    - D. The probability that each Slime will reproduce this generation.
+<details>
+<summary>Click to see the answer</summary>
+**Answer:** C. The exact values of [Trait 1] and [Trait 2] for each slime from Generation X.
+**Explanation:** This is a scatter plot of trait values from the previous generation.  A scatterplot plots exact values for two quantitative variables (Traits) on two orthogonal axes.  
+</details>
+
+:::
+
+## After Generation 3
+
+::: {.panel-tabset}
+
+## Type charts
+
+```{python}
+
+# Define the custom color palette
+color_palette = {
+    'Basic': '#D3D3D3',  # Light grey
+    'Blaster': '#8B0000',  # Dark reddish grey
+    'Ice': '#1E90FF',  # Blue
+    'Fire': '#FFA500',  # Orange
+    'Laser': '#800080',  # Purple
+    'Acid': '#00FF00'  # Green
+}
+
+# Count the frequency of each Main Type
+main_type_counts = df_wave_4[' Main Type'].value_counts().reset_index()
+main_type_counts.columns = ['Main Type', 'Count']
+
+# Create a column chart using plotly with custom colors
+fig = px.bar(main_type_counts, x='Main Type', y='Count',
+             title='Distribution of Main Types (Wave Number = 4)',
+             color='Main Type',
+             color_discrete_map=color_palette)
+
+# Update the layout for better readability
+fig.update_layout(
+    xaxis_title='Main Type',
+    yaxis_title='Number of Slimes',
+    xaxis_tickangle=-45
+)
+
+# Save the plot as an HTML file
+fig.write_html('main_type_distribution_colored.html')
+
+# Display the plot
+fig.show()
+
+
+```
+
+We should totally do a bargraph race at the end of the game!  Plus other animated graphs!
+
+
+1. **What is the correct name for this type of graph?**
+    - A. Scatterplot
+    - B. Histogram
+    - C. Regression Line
+    - D. Time Series
+
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** B. Histogram
+
+**Explanation:** A **Histogram** is a special type of bar chart that shows the frequency distribution of another variable.
+</details>
+
+
+22. **What is your best estimate of the range of the data for Speed?**
+    - A. 1.0 to 5.5
+    - B. 1.0 to 5.0
+    - C. 0.0 to 12.0
+    - D. 0.0 to 109.0
+
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. 1.0 to 5.5
+
+**Explanation:** Values of Speed are shown on the x axis, and the range is defined as the lowest and highest value of the variable.  The lowest value of Speed is in the 1.0 bin, and the highest value is in the 5.5 bin.
+</details>
+
+23. **What bin contains the Mode of the distribution for Speed?**
+    - A. 1.0 to 1.5
+    - B. 109 Slimes
+    - C. 2.0 to 2.5
+    - D. 6.0 to 6.5
+
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** C. 2.0 to 2.5
+
+**Explanation:** The Mode of a distribution is its most frequently observed value.  In this case, the 2.0 to 2.5 bin contains the most slimes.
+</details>
+
+
+## Scatterplots
+
+```{python}
+
+
+
+# Create a scatterplot using plotly
+fig = px.scatter(df_wave_0, 
+                 x=' Speed Trait', 
+                 y=' Tower Attraction Trait',
+                 title='Scatterplot of Speed Trait vs Tower Attraction (Wave Number = 0)')
+
+# Update the layout for better readability
+fig.update_layout(
+    xaxis_title='Speed Trait',
+    yaxis_title='Tower Attraction Trait',
+    xaxis=dict(range=[0, 6]),  # Adjusting based on the histogram range
+)
+
+# Save the plot as an HTML file
+fig.write_html('speed_tower_scatterplot.html')
+
+# Display the plot
+fig.show()
+
+# Print some information about the filtered dataset
+print(f"Number of observations with Wave Number 0: {len(df_wave_0)}")
+print(f"Correlation between Speed Trait and Tower Attraction Trait:")
+print(df_wave_0[[' Speed Trait', ' Tower Attraction Trait']].corr())
+
+```
+
+
+
+1. **What type of relationship appears to exist between Speed Trait and Tower Attraction Trait?**
+    - A. Strong positive correlation
+    - B. Strong negative correlation
+    - C. Weak positive correlation
+    - D. No clear correlation
+<details>
+<summary>Click to see the answer</summary>
+**Answer:** D. No clear correlation
+**Explanation:** The scatterplot shows no clear pattern or trend between Speed Trait and Tower Attraction Trait, indicating no clear correlation between these variables.
+</details>
+
+2. **What is the approximate range of values for the Tower Attraction Trait?**
+    - A. 0 to 6
+    - B. 0 to 12
+    - C. -6 to 6
+    - D. -12 to 12
+<details>
+<summary>Click to see the answer</summary>
+**Answer:** C. -6 to 6
+**Explanation:** The y-axis of the scatterplot, which represents the Tower Attraction Trait, appears to range from approximately -6 to 6.
+</details>
+
+3. **On this graph, what does each individual point (circle) represent?**
+    - A. The maximum value of [Trait 1] and [Trait 2] from all previous Generations of slimes.
+    - B. The average values of the Traits for each slime from Generation X.
+    - C. The exact values of [Trait 1] and [Trait 2] for each slime from Generation X.
+    - D. The probability that each Slime will reproduce this generation.
+<details>
+<summary>Click to see the answer</summary>
+**Answer:** C. The exact values of [Trait 1] and [Trait 2] for each slime from Generation X.
+**Explanation:** This is a scatter plot of trait values from the previous generation.  A scatterplot plots exact values for two quantitative variables (Traits) on two orthogonal axes.  
 </details>
 
 :::
