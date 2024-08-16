@@ -17,13 +17,16 @@ import plotly.graph_objects as go
 import plotly.express as px
 import numpy as np
 
-# Read the CSV file
-df = pd.read_csv('p25curlblast4.csv')
+df = pd.read_csv('newdata1.csv')
 
-# Filter the DataFrame for Wave Number = 0
-df_wave_0 = df[df[' Wave Number'] == 0]
+df_wave_0 = df[df['Wave Number'] == 0]
 
-df_wave_4 = df[df[' Wave Number'] == 4]
+df_wave_4 = df[df['Wave Number'] == 4]
+
+
+
+
+
 ```
 
 ## After Generation 0
@@ -41,7 +44,7 @@ bin_edges = np.arange(0, 12.5, 0.5)
 
 # Create a histogram using plotly with custom bins
 fig = go.Figure(data=[go.Histogram(
-    x=df_wave_0[' Speed Trait'],
+    x=df_wave_0['Speed Trait'],
     xbins=dict(
         start=0,
         end=12,
@@ -128,8 +131,8 @@ fig.show()
 
 # Create a scatterplot using plotly
 fig = px.scatter(df_wave_0, 
-                 x=' Speed Trait', 
-                 y=' Tower Attraction Trait',
+                 x='Speed Trait', 
+                 y='Tower Attraction Trait',
                  title='Scatterplot of Speed Trait vs Tower Attraction (Wave Number = 0)')
 
 # Update the layout for better readability
@@ -148,7 +151,7 @@ fig.show()
 # Print some information about the filtered dataset
 print(f"Number of observations with Wave Number 0: {len(df_wave_0)}")
 print(f"Correlation between Speed Trait and Tower Attraction Trait:")
-print(df_wave_0[[' Speed Trait', ' Tower Attraction Trait']].corr())
+print(df_wave_0[['Speed Trait', 'Tower Attraction Trait']].corr())
 
 ```
 
@@ -208,7 +211,7 @@ color_palette = {
 }
 
 # Count the frequency of each Main Type
-main_type_counts = df_wave_4[' Main Type'].value_counts().reset_index()
+main_type_counts = df_wave_4['Main Type'].value_counts().reset_index()
 main_type_counts.columns = ['Main Type', 'Count']
 
 # Create a column chart using plotly with custom colors
@@ -238,102 +241,98 @@ We should totally do a bargraph race at the end of the game!  Plus other animate
 
 1. **What is the correct name for this type of graph?**
     - A. Scatterplot
-    - B. Histogram
+    - B. Bar Chart
     - C. Regression Line
     - D. Time Series
 
 <details>
 <summary>Click to see the answer</summary>
 
-**Answer:** B. Histogram
+**Answer:** B. Bar Chart
 
-**Explanation:** A **Histogram** is a special type of bar chart that shows the frequency distribution of another variable.
+**Explanation:** A **Bar Chart** is used to represent a quantitative variable (the height of the bar) for a set of discrete groups (arranged on the x axis).  
 </details>
 
 
-22. **What is your best estimate of the range of the data for Speed?**
-    - A. 1.0 to 5.5
-    - B. 1.0 to 5.0
-    - C. 0.0 to 12.0
-    - D. 0.0 to 109.0
+22. **What is your best estimate of the number of Blaster type slimes?**
+    - A. 11
+    - B. 1
+    - C. 0 to 300
+    - D. 46
 
 <details>
 <summary>Click to see the answer</summary>
 
-**Answer:** A. 1.0 to 5.5
+**Answer:** A. 11
 
-**Explanation:** Values of Speed are shown on the x axis, and the range is defined as the lowest and highest value of the variable.  The lowest value of Speed is in the 1.0 bin, and the highest value is in the 5.5 bin.
+**Explanation:** The number of slimes for each type is represented by the height of each bar.  Try hovering over the Blaster type bar to see its corresponding value for the y axis.
 </details>
 
-23. **What bin contains the Mode of the distribution for Speed?**
-    - A. 1.0 to 1.5
-    - B. 109 Slimes
-    - C. 2.0 to 2.5
-    - D. 6.0 to 6.5
+23. **What type of slime is the least frequent in the population?**
+    - A. Blaster
+    - B. Basic
+    - C. Acid
+    - D. Fire
 
 <details>
 <summary>Click to see the answer</summary>
 
-**Answer:** C. 2.0 to 2.5
+**Answer:** D. Fire
 
-**Explanation:** The Mode of a distribution is its most frequently observed value.  In this case, the 2.0 to 2.5 bin contains the most slimes.
+**Explanation:** The least frequent slime type is the represented by the bar with the lowest value.  In this case, there are only XXX fire slimes, a number lower than all the other groups.
 </details>
 
 
-## Scatterplots
+## Fitness Charts
 
 ```{python}
 
 
 
 # Create a scatterplot using plotly
-fig = px.scatter(df_wave_0, 
-                 x=' Speed Trait', 
-                 y=' Tower Attraction Trait',
-                 title='Scatterplot of Speed Trait vs Tower Attraction (Wave Number = 0)')
+fig = px.scatter(df_wave_4, 
+                 x='Sheep Distance Fitness', 
+                 y='Offspring Count',
+                 title='Scatterplot of Fitness Trait vs number of Offspring (Wave Number = 4)')
 
 # Update the layout for better readability
 fig.update_layout(
-    xaxis_title='Speed Trait',
-    yaxis_title='Tower Attraction Trait',
-    xaxis=dict(range=[0, 6]),  # Adjusting based on the histogram range
+    xaxis_title='Sheep Fitness',
+    yaxis_title='Offspring'
 )
 
 # Save the plot as an HTML file
-fig.write_html('speed_tower_scatterplot.html')
+fig.write_html('fit_babies_scatterplot.html')
 
 # Display the plot
 fig.show()
 
-# Print some information about the filtered dataset
-print(f"Number of observations with Wave Number 0: {len(df_wave_0)}")
-print(f"Correlation between Speed Trait and Tower Attraction Trait:")
-print(df_wave_0[[' Speed Trait', ' Tower Attraction Trait']].corr())
+
 
 ```
 
 
 
-1. **What type of relationship appears to exist between Speed Trait and Tower Attraction Trait?**
+1. **What type of relationship appears to exist between Fitness trait and number of Offspring?**
     - A. Strong positive correlation
     - B. Strong negative correlation
     - C. Weak positive correlation
     - D. No clear correlation
 <details>
 <summary>Click to see the answer</summary>
-**Answer:** D. No clear correlation
-**Explanation:** The scatterplot shows no clear pattern or trend between Speed Trait and Tower Attraction Trait, indicating no clear correlation between these variables.
+**Answer:** A. Strong positive correlation
+**Explanation:** The scatterplot shows a strong positive correlation between Fitness and offspring.
 </details>
 
-2. **What is the approximate range of values for the Tower Attraction Trait?**
+2. **What is the approximate range of values for the number of offspring?**
     - A. 0 to 6
     - B. 0 to 12
     - C. -6 to 6
     - D. -12 to 12
 <details>
 <summary>Click to see the answer</summary>
-**Answer:** C. -6 to 6
-**Explanation:** The y-axis of the scatterplot, which represents the Tower Attraction Trait, appears to range from approximately -6 to 6.
+**Answer:** B. 0 to 12
+**Explanation:** The y-axis of the scatterplot represents the number of offspring. The lowest point value is at zero and the highest is 12.
 </details>
 
 3. **On this graph, what does each individual point (circle) represent?**
