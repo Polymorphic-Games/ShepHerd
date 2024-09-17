@@ -6,11 +6,11 @@ categories: [Education, Data Science, Data Visualization]
 echo: false
 ---
 
-
+Tess was here
 ## Assessing Data Science Literacy in Shep.Herd
 
 ```{python}
-#| include: false
+
 
 import pandas as pd
 import plotly.graph_objects as go
