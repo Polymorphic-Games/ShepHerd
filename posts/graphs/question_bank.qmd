@@ -1,0 +1,2192 @@
+---
+title: "ILO/DOK Question Bank"
+author: "Tess Johannesen"
+date: "2025-29-01"
+categories: [Education, Data Science, Data Visualization]
+echo: false
+---
+
+
+## ILOs/DOKs
+This document outlines the key learning objectives for Shep.Herd, along with corresponding tasks designed to evaluate competency in each area. 
+
+
+1. **Students will interpret and analyze data from graphs to identify evolutionary patterns and trends in Shep.Herd.**
+    
+    1. Interpret data on a given graph to identify patterns such as trends or clusters.
+    2. Analyze a graph to explain any identified patterns or trends in the data.
+    3. Interpret the direction of trends on a graph and predict future values based on identified trends.
+    4. Compare multiple graphs to determine common patterns or trends across different datasets.
+    
+    Related questions: 1 - 17
+  
+2. **Students will define natural selection and identify its components.**
+    
+    1. Describe key elements of natural selection.
+    2. List the components of natural selection (variation, inheritance, selection, time).
+    
+    Related questions: 18 - 23, 62, 64
+    
+3. **Students will describe variation and identify variation in traits within slime populations. (variation)**
+    
+    1. Identify adaptations among slimes, such as speed or resistance.
+    
+    Related questions: 21, 23 - 36, 62, 69
+    
+4. **Students will explain the mechanisms through which traits are passed from one generation to the next. (inheritance)**
+    
+    1. Describe how genetic information is transferred from parents to offspring, including the role of dominant and recessive traits. 
+    2. Explain how inherited traits impact a slime’s survival and success during specific generations of the game.
+    3. Predict which traits are likely to become prevalent in future generations based on parental traits and environmental challenges.
+    
+    Related questions: 33, 37 - 46, 62, 69
+
+5. **Students will describe selection pressures and analyze how they affect the prevalence of certain traits in slime populations. (selection)**
+   
+    1. Identify selection pressures, such as tower type, that impact slime survival in Shep.Herd.
+    2. Evaluate how specific traits increase the likelihood of slime survival under different gameplay strategies and conditions.
+    3. Compare populations with different traits and identify which traits lead to greater success in survival and reproduction. 
+    
+    Related questions: 12, 47 - 59, 62, 67, 69
+
+6. **Students will describe how traits in slime populations evolve over multiple generations in Shep.Herd. (time)**
+   
+    1. Interpret data on population shifts across multiple generations to understand evolutionary trends in slime populations.
+    2. Predict evolutionary changes based on observed trends and data regarding traits and population dynamics over time.
+    
+    Related questions: 2, 9, 13, 60 - 69
+    
+7. **Students will explain how evolutionary fitness impacts reproductive success.**
+    
+    1. Describe the concept of evolutionary fitness and its impact on reproductive success in Shep.Herd.
+    2. Interpret diagrams showing relationships between fitness and reproductive success.
+    3. Explain how different factors affect evolutionary fitness and reproductive success.
+    
+    Related questions: 10, 70 - 93
+    
+8. **Students will identify different graph types and choose the appropriate graph type for a given dataset.**
+   
+    1. Match various types of graphs (bar charts, line graphs, scatter plots) to their names and purposes.
+    2. Identify the most appropriate graph type to represent a given dataset effectively.
+    3. Explain the rationale for choosing a specific graph type for a particular dataset.
+    
+    Related questions: 11, 13, 94 - 108
+    
+9. **Students will define key statistical terms (mean, median, mode, range) and identify these elements on a graph.**
+   
+    1. Label the mean, median, mode, and range on a provided graph.
+    2. Define mean, median, mode, and range.
+    3. Calculate the mean, median, mode, and range for a given dataset.
+    
+    Related questions: 109 - 117
+    
+
+
+
+## Question Bank
+The question bank below provides a variety of assessment tools that align with the ILOs, ensuring comprehensive understanding and application.
+
+
+1. **According to the graph, how are slimes progressively adapting to Blaster towers?**
+    
+    A. Slimes are developing greater resistance to Blaster towers. <br>
+    B. There is no adaptation occurring among the slimes. <br>
+    C. Slimes are becoming less resistant to Blaster towers. <br>
+    D. The level of adaptation fluctuates without a clear trend. <br>
+
+   **Min gen:** 1
+
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Slimes are developing greater resistance to Blaster towers.
+
+**Explanation:** The graph shows an increase in adaptation levels to Blaster towers over generations. This indicates that slimes are evolving traits that enhance their resistance to Blaster attacks, making them harder to eliminate with this defense type.
+</details>
+
+
+2. **Which pattern is observed on the graph showing fire resistance in a slime population over 5 generations?**
+    
+    A. An upward trend. <br>
+    B. A downward trend. <br>
+    C. No trend. <br>
+    D. A zigzag pattern. <br>
+
+   **Min gen:** 5
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. An upward trend.
+
+**Explanation:** An upward trend indicates that fire resistance is increasing over generations, which might reflect natural selection favoring slimes with this trait.
+</details>
+
+
+3. **What does the graph suggest about the correlation between slime speed and fitness levels?**
+    
+    A. High speed is associated with high fitness. <br>
+    B. Low speed correlates with high fitness. <br>
+    C. Medium speed is linked to medium fitness. <br>
+    D. The correlation is random distribution. <br>
+
+   **Min gen:** 3
+
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. High speed is associated with high fitness.
+
+**Explanation:** The graph suggests a positive correlation between slime speed and fitness levels, indicating that faster slimes tend to have higher fitness. This may be because speed enhances their ability to evade defenses and access resources.
+</details>
+
+
+4. **What trend is evident in the graph regarding the resistance of slimes to Laser towers?**
+    
+    A. Fewer slimes are resistant to Laser towers. <br>
+    B. More slimes are developing resistance to Laser towers. <br>
+    C. There is no change in laser resistance among slimes. <br>
+    D. Laser resistance fluctuates with no clear pattern. <br>
+
+   **Min gen:** 1
+
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Fewer slimes are resistant to Laser towers.
+
+**Explanation:** The graph shows a decline in the number of slimes resistant to Laser towers over generations, suggesting that the Laser towers are maintaining their effectiveness and that fewer slimes are adapting to counteract them.
+</details>
+
+
+5. **Based on the graph, which tower type do slimes show the least resistance to?**
+    
+    A. Blaster. <br>
+    B. Fire. <br>
+    C. Acid. <br>
+    D. Shock. <br>
+
+   **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Blaster.
+
+**Explanation:** The graph reveals that slimes exhibit the least resistance to Blaster towers compared to other types. This suggests that Blaster towers are a strong choice for defense, as they are most effective against the current generation of slimes.
+</details>
+
+
+6. **What does the graph reveal about the trend in slime adaptation to Ice towers?**
+    
+    A. Slimes with greater resistance to Ice towers have greater fitness. <br>
+    B. Slimes with less resistance to Ice towers have reduced fitness. <br>
+    C. Slimes show no significant change in their adaptation to Ice towers. <br>
+    D. There is no observable correlation between slime adaptation and fitness. <br>
+
+   **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Slimes with greater resistance to Ice towers have greater fitness.
+
+**Explanation:** The graph shows that slimes with increased resistance to Ice towers exhibit enhanced fitness levels. This suggests that these slimes are more adept at surviving and thriving in environments where Ice towers are prevalent.
+</details>
+
+
+7. **What does a positive correlation between slime speed and slime survival rate indicate?**
+    
+    A. Faster slimes survive more often. <br>
+    B. Faster slimes survive less often. <br>
+    C. Speed has no impact on survival rate. <br>
+    D. There’s a negative impact of speed on survival. <br>
+
+   **Min gen:** 2
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Faster slimes survive more often.
+
+**Explanation:** A positive correlation shows that as one variable increases (speed), the other variable (survival rate) also increases.
+</details>
+
+
+8. **What is the least effective strategy to tackle the increasing resistance trends in slimes, as shown in the graph?**
+    
+    A. Add Shock towers to your defense. <br>
+    B. Reduce the use of Shock towers. <br>
+    C. Completely remove Shock towers from your strategy. <br>
+    D. Shock towers have no effect on slime resistance. <br>
+
+   **Min gen:** 3
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Add Shock towers to your defense.
+
+**Explanation:** The graph indicates that slimes are becoming more resistant to Shock towers. Increasing the frequency and possibly the intensity of Shock tower deployments could help counteract these adaptations and improve defense effectiveness.
+</details>
+
+
+9. **If increasing laser resistance is observed in a slime population over five generations, what prediction can be made about the next generation?**
+    
+    A. They will become increasingly resistant to laser towers in the next generation. <br>
+    B. They will become less resistant to acid towers. <br>
+    C. They will evolve shorter lifespans. <br>
+    D. Resistance will remain the same. <br>
+
+   **Min gen:** 5
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. They will become increasingly resistant to laser towers in the next generation.
+
+**Explanation:** Evolutionary patterns in resistance often build on observed trends, so resistance would likely continue to increase.
+</details>
+
+
+10. **What does the diagram showing a direct correlation between fitness and offspring number suggest?**
+    
+    A. Organisms with higher fitness produce more offspring. <br>
+    B. Fitness declines as offspring number increases. <br>
+    C. There is no correlation between fitness and number of offspring. <br>
+    D. All offspring possess the same level of fitness. <br>
+
+   **Min gen:** 5
+
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Organisms with higher fitness produce more offspring.
+
+**Explanation:** A direct relationship between fitness and offspring number suggests that increased fitness leads to higher reproductive success, resulting in more offspring who inherit these beneficial traits.
+</details>
+
+
+11. **If a scatter plot shows no clear trend between slime speed and reproduction, what type of relationship is present?**
+    
+    A. No correlation. <br>
+    B. Positive correlation. <br>
+    C. Negative correlation. <br>
+    D. Exponential growth. <br>
+
+   **Min gen:** 2
+
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. No correlation.
+
+**Explanation:** A lack of a discernible pattern indicates no correlation between the two variables.
+</details>
+
+
+12. **If a graph shows a sharp drop in slime resistance, what might this suggest about selection pressures?**
+    
+    A. The selective pressures are too strong for current traits. <br>
+    B. Slimes are adapting well to the pressures. <br>
+    C. New mutations are improving survival. <br>
+    D. Resistance traits have no genetic basis. <br>
+
+   **Min gen:** 3
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. The selective pressures are too strong for current traits.
+
+**Explanation:** A sharp drop suggests slimes are poorly equipped to cope with the current pressures.
+</details>
+
+
+13. **Which type of graph would best show the change in slime speed across 5 generations?**
+    
+    A. Line graph. <br>
+    B. Pie chart. <br>
+    C. Bar chart. <br>
+    D. Scatter plot. <br>
+
+   **Min gen:** 5
+
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Line graph.
+
+**Explanation:** Line graphs are ideal for showing changes over time.
+</details>
+
+
+14. **What does a flat line in a graph showing slime survival rates across generations mean?**
+    
+    A. No change in survival rates. <br>
+    B. Rapid evolution is occurring. <br>
+    C. Slimes are extinct. <br>
+    D. Mutation rates have increased. <br>
+
+   **Min gen:** 4
+
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. No change in survival rates.
+
+**Explanation:** A flat line indicates consistent survival rates without significant changes.
+</details>
+
+
+15. **When comparing two graphs, what conclusion can be drawn if both show similar trends?**
+    
+    A. The patterns are consistent across datasets. <br>
+    B. The data must be inaccurate. <br>
+    C. Random chance determines the trends. <br>
+    D. Traits evolve differently in both populations. <br>
+
+   **Min gen:** 3
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. The patterns are consistent across datasets.
+
+**Explanation:** Similar trends suggest consistent patterns, supporting the reliability of the data.
+</details>
+
+
+16. **A graph showing faster slimes outperforming slower ones would likely show what kind of trend?**
+    
+    A. Positive correlation. <br>
+    B. Negative correlation. <br>
+    C. No correlation. <br>
+    D. Random scatter. <br>
+
+   **Min gen:** 2
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Positive correlation.
+
+**Explanation:** Faster slimes’ improved performance would correlate positively with survival or reproduction.
+</details>
+
+
+17. **Which graph feature would help predict traits in future slime generations?**
+    
+    A. The direction of trends. <br>
+    B. The x-axis labels. <br>
+    C. The size of the data points. <br>
+    D. The presence of outliers. <br>
+
+   **Min gen:** 4
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. The direction of trends.
+
+**Explanation:** Trend directions help project future changes in traits or populations.
+</details>
+
+
+18. **Which of the following best defines natural selection?**
+    
+    A. A process where organisms better adapted to their environment tend to survive and reproduce more successfully. <br>
+    B. A random process leading to evolution without environmental influence. <br>
+    C. A method of breeding organisms to select specific traits. <br>
+    D. The inheritance of acquired traits during an organism’s lifetime. <br>
+
+   **Min gen:** 3
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. A process where organisms better adapted to their environment tend to survive and reproduce more successfully.
+
+**Explanation:** Natural selection is driven by environmental pressures and favors traits that improve survival and reproduction.
+</details>
+
+
+19. **Which is NOT a component of natural selection?**
+    
+    A. Mutation rate. <br>
+    B. Variation. <br>
+    C. Inheritance. <br>
+    D. Selection. <br>
+
+   **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Mutation rate.
+
+**Explanation:** While mutation contributes to variation, it is not a direct component of natural selection.
+</details>
+
+
+20. **Which factor does NOT directly affect natural selection?**
+    
+    A. Individual effort. <br>
+    B. Environmental conditions. <br>
+    C. Variation in traits. <br>
+    D. Differential survival and reproduction. <br>
+
+   **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Individual effort.
+
+**Explanation:** Effort by individuals does not change genetic traits passed on to the next generation.
+</details>
+
+
+21. **Which condition is necessary for natural selection to occur?**
+    
+    A. Variation in traits must exist. <br>
+    B. All organisms in a population must be identical. <br>
+    C. Reproduction must be equal across all individuals. <br>
+    D. The environment must remain constant. <br>
+
+   **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Variation in traits must exist.
+
+**Explanation:** Without variation, there would be no differences for natural selection to act upon.
+</details>
+
+
+22. **Which of the following is an outcome of natural selection?**
+    
+    A. Adaptation of populations to their environments. <br>
+    B. A decrease in trait variation. <br>
+    C. Uniformity of traits across generations. <br>
+    D. Random survival of individuals. <br>
+
+   **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Adaptation of populations to their environments.
+
+**Explanation:** Adaptation occurs as populations evolve traits suited to their environment.
+</details>
+
+
+23. **What is variation in a biological context?**
+    
+    A. Differences in traits among individuals in a population. <br>
+    B. The uniformity of traits in a population. <br>
+    C. The absence of mutations in a population. <br>
+    D. The random movement of organisms. <br>
+
+   **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Differences in traits among individuals in a population.
+
+**Explanation:** Variation refers to the differences in traits, such as size, speed, or resistance, within a population.
+</details>
+
+
+24. **Which trait variation is observed among slime populations in Shep.Herd?**
+    
+    A. Tower resistance. <br>
+    B. Weight. <br>
+    C. Height. <br>
+    D. Hair length. <br>
+
+   **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Tower resistance.
+
+**Explanation:** Variation refers to the differences in traits within a population. Among the slime populations in Shep.Herd, “Tower Resistance” is the trait that varies, indicating differences in how resistant the slimes are to certain tower attacks.
+</details>
+
+
+25. **Which of the following is an example of variation in slime populations in Shep.Herd?**
+    
+    A. Some slimes are faster than others. <br>
+    B. All slimes have the same resistance to fire. <br>
+    C. Slimes survive only in certain environments. <br>
+    D. Slime populations remain constant over time. <br>
+
+   **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Some slimes are faster than others.
+
+**Explanation:** Variation is evident when slimes differ in traits like speed, which may affect their survival.
+</details>
+
+
+26. **What role does genetic variation play in slime adaptation in Shep.Herd?**
+    
+    A. It offers a range of traits that can enhance survival and gameplay difficulty. <br>
+    B. It boosts slime fitness. <br>
+    C. It causes slimes to move slower. <br>
+    D. It has no effect on survival. <br>
+
+   **Min gen:** 2
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. It offers a range of traits that can enhance survival and gameplay difficulty.
+
+**Explanation:** "Genetic variation in the game means slimes develop diverse traits, like resistance to specific tower types such as Shock or Ice. This diversity enhances survival by allowing some slimes to better evade certain defenses, thereby increasing their evolutionary fitness.
+</details>
+
+
+27. **Which is NOT a source of variation in slime populations?**
+    
+    A. Cloning. <br>
+    B. Mutations. <br>
+    C. Sexual reproduction. <br>
+    D. Genetic recombination. <br>
+
+   **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Cloning.
+
+**Explanation:** Cloning produces identical individuals, which eliminates variation.
+</details>
+
+
+28. **What is one effect of introducing a new tower type on slime traits?**
+    
+    A. It could drive the development of new adaptive traits. <br>
+    B. It would cause slimes to lose all existing adaptations. <br>
+    C. It would have no effect on slime evolution. <br>
+    D. It would make all slimes evolve identically. <br>
+
+   **Min gen:** 2
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. It could drive the development of new adaptive traits.
+
+**Explanation:** "The introduction of a new tower type creates a new environmental challenge. This acts as a selection pressure, encouraging the evolution of new traits that help slimes survive, illustrating evolutionary adaptation in response to environmental changes.
+</details>
+
+
+29. **What is the role of mutation in introducing new traits in slimes?**
+    
+    A. It introduces new potentially advantageous traits. <br>
+    B. It makes all slimes identical instantly. <br>
+    C. It slows down the reproduction of slimes. <br>
+    D. It results in the immediate extinction of slimes. <br>
+
+   **Min gen:** 2
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. It introduces new potentially advantageous traits.
+
+**Explanation:** Mutations in the game introduce new traits that may help slimes survive tower defenses. These genetic changes can lead to adaptations, enhancing the slimes’ ability to withstand attacks and increasing their evolutionary fitness.
+</details>
+
+
+30. **What is one potential effect of changing tower configurations on slimes?**
+    
+    A. They might lead to the evolution of new resistance traits. <br>
+    B. They would have no effect on slime evolution. <br>
+    C. They would instantly make all slimes stronger. <br>
+    D. They would decrease genetic diversity among slimes. <br>
+
+   **Min gen:** 4
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. They might lead to the evolution of new resistance traits.
+
+**Explanation:** Changes in tower configurations introduce new selection pressures, prompting slimes to evolve traits that help them resist the altered defenses. This dynamic adaptation process is a key component of evolutionary theory.
+</details>
+
+
+31. **In Shep.Herd, which trait could be an example of variation among slimes?**
+    
+    A. Speed. <br>
+    B. Eye color. <br>
+    C. Weight. <br>
+    D. There is no trait variation among slime populations. <br>
+
+   **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Speed.
+
+**Explanation:** Differences in speed among slimes are a clear example of variation.
+</details>
+
+
+32. **Which of the following is an advantage of increased speed for slimes?**
+    
+    A. Both reaching sheep more efficiently and evading tower attacks. <br>
+    B. Enables slimes to reach and attack sheep more effectively. <br>
+    C. Helps slimes dodge tower attacks. <br>
+    D. Makes slimes appear more colorful. <br>
+
+   **Min gen:** 2
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Both reaching sheep more efficiently and evading tower attacks.
+
+**Explanation:** In the game, increased speed allows slimes to evade tower defenses like Blaster and Fire more effectively while reaching the sheep faster. This improves their survival rate, aligning with evolutionary fitness, as those that evade attacks better are more likely to survive and reproduce.
+</details>
+
+
+33. **How does sexual reproduction contribute to variation in traits?**
+    
+    A. It shuffles genetic material to produce unique offspring. <br>
+    B. It creates clones of parents. <br>
+    C. It prevents new trait combinations from forming. <br>
+    D. It eliminates mutations from the population. <br>
+
+   **Min gen:** 2
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. It shuffles genetic material to produce unique offspring.
+
+**Explanation:** Sexual reproduction combines genetic material from two parents, creating offspring with unique traits.
+</details>
+
+
+34. **Which is most likely to introduce new variations in a slime population?**
+    
+    A. Random mutations. <br>
+    B. Increased towers of the same type. <br>
+    C. Consistent environmental conditions. <br>
+    D. Lack of reproduction. <br>
+
+   **Min gen:** 2
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Random mutations.
+
+**Explanation:** Mutations introduce new genetic variations, which can result in different traits.
+</details>
+
+
+35. **Which of the following is an adaptation in Shep.Herd that results from variation?**
+    
+    A. Slimes with higher resistance to acid towers surviving longer. <br>
+    B. Slimes developing weaker traits over time. <br>
+    C. All slimes evolving in the same way regardless of traits. <br>
+    D. Slimes losing beneficial traits each generation. <br>
+
+   **Min gen:** 3
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Slimes with higher resistance to acid towers surviving longer.
+
+**Explanation:** Adaptations arise when variations allow some individuals to survive and reproduce more effectively.
+</details>
+
+
+36. **In Shep.Herd, which trait variation could directly affect slime survival?**
+    
+    A. Speed differences. <br>
+    B. Color differences. <br>
+    C. Population size. <br>
+    D. Geographic location. <br>
+
+   **Min gen:** 2
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Speed differences.
+
+**Explanation:** Speed directly influences a slime's ability to evade towers and survive longer.
+</details>
+
+
+37. **How are traits inherited in Shep.Herd?**
+    
+    A. Traits are passed through genetic material inherited from parents. <br>
+    B. Traits are randomly assigned during reproduction. <br>
+    C. Traits are created anew in each generation. <br>
+    D. Traits are acquired during an organism’s lifetime. <br>
+
+   **Min gen:** 2
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Traits are passed through genetic material inherited from parents.
+
+**Explanation:** Traits are inherited through genes, which carry the genetic information from parents to offspring.
+</details>
+
+
+38. **Which slimes are most likely to survive when laser towers are used?**
+    
+    A. Laser-resistant slimes. <br>
+    B. Fire-resistant slimes. <br>
+    C. Acid-resistant slimes. <br>
+    D. Blaster-resistant slimes. <br>
+
+   **Min gen:** 2
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Laser-resistant slimes.
+
+**Explanation:** Laser-resistant slimes will be able to survive longer in a tower defense gameplay that utilizes primarily laser towers, allowing them to produce more offspring for the next generation.
+</details>
+
+
+39. **What determines whether a trait is dominant or recessive?**
+    
+    A. The alleles inherited from parents. <br>
+    B. Environmental conditions. <br>
+    C. The population size. <br>
+    D. Whether the trait benefits survival. <br>
+
+   **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. The alleles inherited from parents.
+
+**Explanation:** The interaction of alleles (dominant and recessive) inherited from parents determines a trait’s expression.
+</details>
+
+
+40. **In Shep.Herd, which best explains how fire resistance evolves in slimes?**
+    
+    A. In an environment with many Fire towers, fire resistant slimes survive longer and produce more offspring, increasing the occurance of fire resistance in the population. <br>
+    B. Random acquisition of resistance during gameplay. <br>
+    C. All slimes gain fire resistance regardless of parental traits. <br>
+    D. Fire resistance is not a trait observed in slime populations. <br>
+
+   **Min gen:** 4
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. In an environment with many Fire towers, fire resistant slimes survive longer and produce more offspring, increasing the occurance of fire resistance in the population.
+
+**Explanation:** Fire-resistant traits are inherited when parents with these traits reproduce.
+</details>
+
+
+41. **How does inheritance of traits work when two slimes with the same trait reproduce?**
+    
+    A. Their offspring may inherit the trait depending on dominant and recessive alleles. <br>
+    B. Their offspring will always inherit the same trait. <br>
+    C. The offspring will develop entirely new traits. <br>
+    D. Their offspring will not inherit any traits. <br>
+
+   **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Their offspring may inherit the trait depending on dominant and recessive alleles.
+
+**Explanation:** Offspring inherit traits according to genetic rules, which consider dominant and recessive alleles.
+</details>
+
+
+42. **Which of the following is an example of an inherited trait in slime populations?**
+    
+    A. Resistance to a specific tower type. <br>
+    B. A scar on a slime from a previous battle. <br>
+    C. A slime’s position in the population. <br>
+    D. A temporary boost in speed from a power-up. <br>
+
+   **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Resistance to a specific tower type.
+
+**Explanation:** Resistance is a genetic trait passed from parent slimes to offspring.
+</details>
+
+
+43. **How is inheritance illustrated in Shep.Herd?**
+    
+    A. Offspring inherit traits, like speed, from parents with those traits, improving survival and reproduction. <br>
+    B. Slimes learning to avoid acid towers after encountering them. <br>
+    C. Slimes randomly acquiring traits during gameplay. <br>
+    D. All slimes in the population having identical traits. <br>
+
+   **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Offspring inherit traits, like speed, from parents with those traits, improving survival and reproduction.
+
+**Explanation:** Offspring inherit traits such as speed based on the genetic material passed down from parents.
+</details>
+
+
+44. **How do inherited traits influence slime survival in Shep.Herd?**
+    
+    A. Traits like acid resistance help slimes survive acid towers and reproduce successfully. <br>
+    B. Slimes gain temporary power-ups during gameplay. <br>
+    C. Slimes lose traits after surviving a wave. <br>
+    D. Traits being distributed randomly with no effect on gameplay. <br>
+
+   **Min gen:** 2
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Traits like acid resistance help slimes survive acid towers and reproduce successfully.
+
+**Explanation:** Traits like acid resistance improve survival chances in environments dominated by acid towers.
+</details>
+
+
+45. **Inheritance involves which of the following processes?**
+    
+    A. Genetic information being passed from parent to offspring. <br>
+    B. Acquiring traits during life and passing them on. <br>
+    C. Traits being evenly distributed among all offspring. <br>
+    D. Environmental changes directly altering genetic material. <br>
+
+   **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Genetic information being passed from parent to offspring.
+
+**Explanation:** Inheritance is the transfer of genetic material, including traits, from parents to offspring.
+</details>
+
+
+46. **Which statement about dominant and recessive traits is most accurate?**
+    
+    A. Dominant traits are expressed when at least one dominant allele is present. <br>
+    B. Recessive traits always appear more frequently. <br>
+    C. Dominant traits eliminate recessive traits from the population. <br>
+    D. Recessive traits are never expressed in offspring. <br>
+
+   **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Dominant traits are expressed when at least one dominant allele is present.
+
+**Explanation:** Dominant traits require only one dominant allele for expression, while recessive traits require two.
+</details>
+
+
+47. **What is a selection pressure?**
+    
+    A. An environmental factor that influences which traits are advantageous. <br>
+    B. The random appearance of traits in a population. <br>
+    C. A trait that is inherited without change. <br>
+    D. A process that removes variation in a population. <br>
+
+   **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. An environmental factor that influences which traits are advantageous.
+
+**Explanation:** Selection pressures are environmental factors, such as predation or resources, that determine which traits are more favorable for survival.
+</details>
+
+
+48. **Which of the following is an example of a selection pressure in Shep.Herd?**
+    
+    A. The type of towers used in the game. <br>
+    B. The random mutation of slime traits. <br>
+    C. The size of the slime population. <br>
+    D. The number of waves in a level. <br>
+
+   **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. The type of towers used in the game.
+
+**Explanation:** Towers create selection pressures by targeting slimes with specific weaknesses, influencing which traits are advantageous.
+</details>
+
+
+49. **What is an example of selection in Shep.Herd?**
+    
+    A. Slimes resistant to laser towers surviving longer in a gameplay using primarly laser towers. <br>
+    B. Random changes in tower type. <br>
+    C. Slimes evolving traits in one generation. <br>
+    D. All slimes surviving equally well. <br>
+
+   **Min gen:** 2
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Slimes resistant to laser towers surviving longer in a gameplay using primarly laser towers.
+
+**Explanation:** Selection occurs when certain traits give slimes an advantage, like resistance to a specific tower type.
+</details>
+
+
+50. **What is the role of tower types in the natural selection of slimes?**
+    
+    A. They exert selection pressures that favor resistant traits. <br>
+    B. They randomly eliminate slimes. <br>
+    C. They have no impact on slime evolution. <br>
+    D. They make all slimes identical. <br>
+
+   **Min gen:** 2
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. They exert selection pressures that favor resistant traits.
+
+**Explanation:** Different tower types create unique challenges, encouraging the evolution of specific resistance traits in slimes. For example, slimes may develop heat resistance to survive Fire towers, illustrating natural selection by favoring traits that improve survival.
+</details>
+
+
+51. **How do tower defenses impact the slime evolution?**
+    
+    A. By selecting for traits that enhance resistance. <br>
+    B. By indiscriminately eliminating all slimes. <br>
+    C. By causing slimes to become weaker. <br>
+    D. By reducing slime reproduction. <br>
+
+   **Min gen:** 2
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. By selecting for traits that enhance resistance.
+
+**Explanation:** Tower defenses in the game act as selection pressures, favoring slimes that evolve resistance traits to specific towers like Shock or Blaster. Over generations, these resistance traits become more common in the population, demonstrating natural selection.
+</details>
+
+
+52. **Which of the following acts as a selection pressure in Shep.Herd?**
+    
+    A. Tower defenses targeting slimes. <br>
+    B. Random changes in color. <br>
+    C. Equal survival chances for all slimes. <br>
+    D. Slimes reproducing at an even rate. <br>
+
+   **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Tower defenses targeting slimes.
+
+**Explanation:** Tower defenses like Acid and Ice towers apply selection pressure by challenging slimes to survive. Those that adapt and develop resistance are more likely to reproduce, illustrating natural selection in the game environment.
+</details>
+
+
+53. **In a population of slimes exposed to acid towers, which trait is most likely to become more common?**
+    
+    A. Acid resistance. <br>
+    B. Increased speed. <br>
+    C. Fire resistance. <br>
+    D. Larger size. <br>
+
+   **Min gen:** 2
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Acid resistance.
+
+**Explanation:** Acid resistance will provide a survival advantage in an environment dominated by acid towers.
+</details>
+
+
+54. **How might the introduction of a new tower type in Shep.Herd affect slime populations?**
+    
+    A. Slimes with traits resistant to the new tower would have a survival advantage. <br>
+    B. The population size would remain unchanged. <br>
+    C. All slimes would adapt to the tower immediately. <br>
+    D. The population would lose all variation. <br>
+
+   **Min gen:** 4
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Slimes with traits resistant to the new tower would have a survival advantage.
+
+**Explanation:** New selection pressures, like new tower types, favor slimes with traits that improve survival against them.
+</details>
+
+
+55. **Which slime traits are likely to enhance survival in a tower defense setup dominated by acid towers?**
+    
+    A. Acid resistance. <br>
+    B. Fire resistance. <br>
+    C. Laser resistance. <br>
+    D. No trait would enhance survival. <br>
+
+   **Min gen:** 4
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Acid resistance.
+
+**Explanation:** In a tower defense setup dominated by acid towers, "Acid resistance" is the trait that would enhance slime survival. This trait allows slimes to withstand or reduce damage from acid attacks, increasing their chances of progressing through the defense. Other traits like fire or laser resistance are less beneficial in this context.
+</details>
+
+
+56. **In Shep.Herd, how does slime speed affect survival under certain tower configurations?**
+    
+    A. Faster slimes may evade towers more effectively. <br>
+    B. Speed has no effect on survival. <br>
+    C. Faster slimes are always eliminated first. <br>
+    D. Speed only matters in larger populations. <br>
+
+   **Min gen:** 4
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Faster slimes may evade towers more effectively.
+
+**Explanation:** Speed can help slimes evade attacks, especially when towers target slower individuals.
+</details>
+
+
+57. **Which of the following scenarios demonstrates the effect of selection pressures?**
+    
+    A. Only slimes resistant to fire towers survive and reproduce in a fire-dominated level. <br>
+    B. A population of slimes changes size without changes in traits. <br>
+    C. All slimes in a population gain the same traits instantly. <br>
+    D. Traits are passed on regardless of survival or reproduction. <br>
+
+   **Min gen:** 4
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Only slimes resistant to fire towers survive and reproduce in a fire-dominated level.
+
+**Explanation:** Fire resistance provides a survival advantage under fire tower selection pressures, leading to its prevalence.
+</details>
+
+
+58. **In Shep.Herd, slimes with resistance to laser towers survive better in a level dominated by lasers. What does this illustrate?**
+    
+    A. Selection pressures favor traits that improve survival in specific conditions. <br>
+    B. All slimes eventually develop laser resistance. <br>
+    C. Resistance traits disappear over time. <br>
+    D. Selection pressures do not affect slime populations. <br>
+
+   **Min gen:** 3
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Selection pressures favor traits that improve survival in specific conditions.
+
+**Explanation:** Selection pressures, such as laser towers, favor traits like resistance that enhance survival.
+</details>
+
+
+59. **In Shep.Herd, how do tower configurations influence the evolution of slime traits?**
+    
+    A. They act as selection pressures that favor certain traits over others. <br>
+    B. They cause all slimes to develop new traits. <br>
+    C. They stop traits from being inherited. <br>
+    D. They eliminate trait variation in the population. <br>
+
+   **Min gen:** 3
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. They act as selection pressures that favor certain traits over others.
+
+**Explanation:** Tower configurations create selection pressures, favoring traits like resistance or speed that improve survival.
+</details>
+
+
+60. **In Shep.Herd, why might fire resistance increase in the slime population over multiple generations?**
+    
+    A. Fire-resistant slimes are more likely to survive fire towers and reproduce. <br>
+    B. Fire resistance appears in all slimes regardless of gameplay. <br>
+    C. Fire-resistant slimes eliminate non-resistant slimes. <br>
+    D. Fire resistance is created by exposure to fire towers. <br>
+
+   **Min gen:** 4
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Fire-resistant slimes are more likely to survive fire towers and reproduce.
+
+**Explanation:** Traits like fire resistance spread as fire-resistant slimes have higher survival and reproduction rates.
+</details>
+
+
+61. **Which of the following is an example of evolution in Shep.Herd?**
+    
+    A. The population becoming faster over several generations due to tower selection. <br>
+    B. Slimes randomly gaining traits mid-game. <br>
+    C. All slimes losing their traits simultaneously. <br>
+    D. Traits being acquired from environmental interactions. <br>
+
+   **Min gen:** 3
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. The population becoming faster over several generations due to tower selection.
+
+**Explanation:** Evolution involves changes in traits, such as speed, becoming more common due to survival and reproduction advantages.
+</details>
+
+
+62. **What drives the evolution of slime populations in Shep.Herd?**
+    
+    A. The survival and reproduction of individuals with advantageous traits. <br>
+    B. Random distribution of traits. <br>
+    C. Equal inheritance of all traits by all slimes. <br>
+    D. Traits developing independently of survival pressures. <br>
+
+   **Min gen:** 3
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. The survival and reproduction of individuals with advantageous traits.
+
+**Explanation:** Evolution is driven by natural selection, favoring traits that improve survival and reproduction.
+</details>
+
+
+63. **In a population where acid resistance becomes increasingly common, what can you infer?**
+    
+    A. Acid-resistant slimes have a survival advantage in the environment, leading to higher reproduction rates. <br>
+    B. Acid resistance has no effect on survival. <br>
+    C. Acid towers are less effective over time. <br>
+    D. Acid resistance is randomly distributed across the population. <br>
+
+   **Min gen:** 4
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Acid-resistant slimes have a survival advantage in the environment, leading to higher reproduction rates.
+
+**Explanation:** Acid-resistant slimes survive better in the presence of acid towers, spreading this trait across generations.
+</details>
+
+
+64. **Which best describes the role of time in natural selection?**
+    
+    A. It allows cumulative changes in traits over many generations. <br>
+    B. It ensures that evolution happens instantaneously. <br>
+    C. It prevents certain traits from being passed on. <br>
+    D. It eliminates all variation within a population. <br>
+
+   **Min gen:** 3
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. It allows cumulative changes in traits over many generations.
+
+**Explanation:** Evolution occurs gradually as advantageous traits accumulate over time.
+</details>
+
+
+65. **Which factor is critical for a trait to evolve in a slime population over generations?**
+    
+    A. The trait must improve survival or reproduction. <br>
+    B. The trait must be acquired during life. <br>
+    C. The trait must be equally distributed in the first generation. <br>
+    D. The trait must remain unchanged across generations. <br>
+
+   **Min gen:** 4 
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. The trait must improve survival or reproduction.
+
+**Explanation:** Traits that enhance survival or reproduction are more likely to be passed to future generations, driving evolution.
+</details>
+
+
+66. **Over several generations, slimes with faster speeds dominate the population. What likely caused this change?**
+    
+    A. Faster slimes were more likely to evade towers, survive, and reproduce. <br>
+    B. Speed increases randomly in all individuals. <br>
+    C. Slimes intentionally developed speed to adapt to towers. <br>
+    D. Towers stopped targeting slower slimes. <br>
+
+   **Min gen:** 4
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Faster slimes were more likely to evade towers, survive, and reproduce.
+
+**Explanation:** Faster slimes survived better and reproduced more, spreading the speed trait over generations.
+</details>
+
+
+67. **What happens to slime traits that are not advantageous under current selection pressures?**
+    
+    A. They decrease in frequency over time. <br>
+    B. They spread equally with advantageous traits. <br>
+    C. They remain unaffected by selection pressures. <br>
+    D. They disappear immediately in one generation. <br>
+
+   **Min gen:** 4
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. They decrease in frequency over time.
+
+**Explanation:** Traits that do not improve survival or reproduction are less likely to be passed on and become less common.
+</details>
+
+
+68. **In Shep.Herd, if speed increases in a slime population over generations, what is a possible explanation?**
+    
+    A. Faster slimes were more successful in avoiding towers and reproducing. <br>
+    B. Slimes with slower speeds reproduced more. <br>
+    C. Speed was acquired randomly without selection pressures. <br>
+    D. Speed increased in all individuals simultaneously. <br>
+
+   **Min gen:** 4
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Faster slimes were more successful in avoiding towers and reproducing.
+
+**Explanation:** Faster slimes survived better, leading to an increase in the speed trait within the population.
+</details>
+
+
+69. **Which statement best describes the evolution of traits over time in Shep.Herd?**
+    
+    A. Evolution involves traits that improve survival and reproduction becoming more common over generations. <br>
+    B. Evolution occurs when all slimes gain the same traits randomly. <br>
+    C. Evolution stops when no selection pressures exist. <br>
+    D. Evolution eliminates variation in the population. <br>
+
+   **Min gen:** 4
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Evolution involves traits that improve survival and reproduction becoming more common over generations.
+
+**Explanation:** Evolution is the process by which advantageous traits spread across generations, improving survival and reproduction.
+</details>
+
+
+70. **What is evolutionary fitness?**
+    
+    A. The ability of an organism to survive and reproduce successfully. <br>
+    B. The ability to survive without reproducing. <br>
+    C. The size of an organism compared to others. <br>
+    D. The number of traits an organism has. <br>
+
+   **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. The ability of an organism to survive and reproduce successfully.
+
+**Explanation:** Evolutionary fitness refers to how well an organism survives and reproduces in its environment, contributing to the next generation's gene pool.
+</details>
+
+
+71. **How does evolutionary fitness relate to reproductive success?**
+    
+    A. Organisms with higher fitness are more likely to reproduce successfully. <br>
+    B. Organisms with low fitness produce the most offspring. <br>
+    C. Fitness only affects survival, not reproduction. <br>
+    D. Reproductive success does not depend on fitness. <br>
+
+   **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Organisms with higher fitness are more likely to reproduce successfully.
+
+**Explanation:** Higher evolutionary fitness increases an organism's likelihood of surviving and producing offspring, enhancing reproductive success.
+</details>
+
+
+72. **In Shep.Herd, how can evolutionary fitness be measured?**
+    
+    A. By determining how many offspring a slime produces. <br>
+    B. By counting how many traits a slime has. <br>
+    C. By observing how quickly a slime mutates. <br>
+    D. By evaluating the size of the slime population. <br>
+
+   **Min gen:** 2
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. By determining how many offspring a slime produces.
+
+**Explanation:** Fitness is measured by the number of surviving offspring that inherit traits favorable for survival and reproduction.
+</details>
+
+
+73. **How does high fitness affect an organism’s reproductive success?**
+    
+    A. It leads to an increased number of offspring. <br>
+    B. It reduces the chance of finding a mate. <br>
+    C. It has no impact on reproduction. <br>
+    D. It results in the organism being more vulnerable to predators. <br>
+
+   **Min gen:** 3
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. It leads to an increased number of offspring.
+
+**Explanation:** Organisms with high evolutionary fitness are more adept at surviving and reproducing in their environment. This results in producing more offspring, thereby increasing the spread of their advantageous traits.
+</details>
+
+
+74. **Which factor can directly affect an organism’s fitness?**
+    
+    A. Its ability to locate and utilize food resources. <br>
+    B. The amount of sunlight it receives. <br>
+    C. The color of its surroundings. <br>
+    D. The number of trees in its habitat. <br>
+
+   **Min gen:** 2
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Its ability to locate and utilize food resources.
+
+**Explanation:** Access to food resources is vital for an organism’s survival and energy needs, which directly impacts its ability to reproduce. This influences evolutionary fitness by supporting continued survival and reproduction.
+</details>
+
+
+75. **How is fitness related to the process of natural selection?**
+    
+    A. Natural selection favors individuals with greater fitness. <br>
+    B. Natural selection favors individuals with lesser fitness. <br>
+    C. Fitness and natural selection are not related. <br>
+    D. Natural selection leads to decreased fitness. <br>
+
+   **Min gen:** 3
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Natural selection favors individuals with greater fitness.
+
+**Explanation:** Natural selection tends to favor individuals with traits that enhance their fitness, allowing them to survive and reproduce more effectively. This process leads to the proliferation of beneficial traits within a population.
+</details>
+
+
+76. **How can changes in the environment impact an organism’s fitness?**
+    
+    A. They can change resource availability, affecting survival and reproduction. <br>
+    B. They have no effect on fitness. <br>
+    C. They only influence organisms with low fitness. <br>
+    D. They make all organisms equally fit. <br>
+
+   **Min gen:** 3
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. They can change resource availability, affecting survival and reproduction.
+
+**Explanation:** Environmental changes can impact the resources available to an organism, thereby affecting its ability to survive and reproduce. This, in turn, influences its evolutionary fitness by altering the conditions necessary for survival.
+</details>
+
+
+77. **Why is genetic variation crucial for maintaining fitness?**
+    
+    A. It provides diverse traits that may enhance survival and reproduction. <br>
+    B. It results in all individuals being identical. <br>
+    C. It decreases the likelihood of survival. <br>
+    D. It makes organisms more prone to disease. <br>
+
+   **Min gen:** 4
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. It provides diverse traits that may enhance survival and reproduction.
+
+**Explanation:** Genetic variation increases the likelihood of advantageous traits emerging, enhancing an organism’s ability to adapt to changing environments and survive, thus maintaining evolutionary fitness.
+</details>
+
+
+78. **Which statement best describes the relationship between fitness and survival?**
+    
+    A. Higher fitness generally leads to better survival rates. <br>
+    B. Fitness is unrelated to survival. <br>
+    C. Lower fitness increases survival chances. <br>
+    D. Fitness only influences reproduction. <br>
+
+   **Min gen:** 3
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Higher fitness generally leads to better survival rates.
+
+**Explanation:** Individuals with higher fitness are typically better adapted to their environment, which increases their chances of survival and successful reproduction, perpetuating beneficial traits in the population.
+</details>
+
+
+79. **How does competition impact fitness?**
+    
+    A. It favors individuals with traits that improve competitive abilities. <br>
+    B. It has no effect on fitness. <br>
+    C. It reduces the fitness of all organisms. <br>
+    D. It eliminates all competitors. <br>
+
+   **Min gen:** 3
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. It favors individuals with traits that improve competitive abilities.
+
+**Explanation:** Competition drives the selection of traits that enhance an organism’s ability to acquire resources, which in turn enhances its fitness by improving survival and reproductive success.
+</details>
+
+
+80. **How can mutations affect an organism’s fitness?**
+    
+    A. Mutations can introduce new beneficial traits that enhance fitness. <br>
+    B. All mutations decrease fitness. <br>
+    C. Mutations have no effect on fitness. <br>
+    D. Mutations always lead to decreased reproduction. <br>
+    
+   **Min gen:** 3
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Mutations can introduce new beneficial traits that enhance fitness.
+
+**Explanation:** Mutations create new traits, some of which may provide a survival or reproductive advantage, enhancing an organism’s evolutionary fitness by introducing beneficial genetic diversity.
+</details>
+
+
+81. **How does adapting to a specific environment influence an organism’s fitness?**
+    
+    A. It increases fitness in that organism's environment. <br>
+    B. It guarantees survival in any environment. <br>
+    C. It decreases fitness in all environments. <br>
+    D. It has no effect on fitness. <br>
+
+   **Min gen:** 3
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. It increases fitness in that organism's environment.
+
+**Explanation:** Adapting to a specific environment enhances an organism’s ability to thrive there, increasing its evolutionary fitness by ensuring better survival and reproductive success in that context.
+</details>
+
+
+82. **How do adaptations contribute to an organism’s fitness?**
+    
+    A. They enhance an organism’s ability to survive and reproduce. <br>
+    B. They make all organisms identical. <br>
+    C. They have no effect on fitness. <br>
+    D. They make organisms more vulnerable to predators. <br>
+
+   **Min gen:** 3
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. They enhance an organism’s ability to survive and reproduce.
+
+**Explanation:** Adaptations improve an organism’s fit with its environment, increasing its chances of survival and successful reproduction, thereby boosting evolutionary fitness.
+</details>
+
+
+83. **What is a possible evolutionary outcome for slimes with increased fitness?**
+    
+    A. They produce more offspring with advantageous traits. <br>
+    B. They are eliminated by tower defenses more quickly. <br>
+    C. They become less genetically diverse. <br>
+    D. There is no evolutionary change. <br>
+
+   **Min gen:** 4
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. They produce more offspring with advantageous traits.
+
+**Explanation:** Slimes with increased fitness in the game survive longer against tower defenses, allowing them to reproduce more. This results in more offspring inheriting beneficial traits, like tower resistance, demonstrating evolutionary success.
+</details>
+
+
+84. **In Shep.Herd, what trait might increase a slime's evolutionary fitness in a fire-dominated level?**
+    
+    A. Fire resistance. <br>
+    B. Speed resistance. <br>
+    C. Acid resistance. <br>
+    D. High visibility. <br>
+
+   **Min gen:** 4
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Fire resistance.
+
+**Explanation:** Fire resistance enhances survival in fire-dominated levels, increasing the chances of reproduction and passing on the trait.
+</details>
+
+
+85. **How does speed influence the fitness of slimes in Shep.Herd?**
+    
+    A. Faster slimes generally have higher fitness. <br>
+    B. Speed has no influence on slime fitness. <br>
+    C. Slower slimes are considered to have higher fitness. <br>
+    D. The fitness impact of speed varies depending on the towers deployed by the player. <br>
+
+   **Min gen:** 4
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Faster slimes generally have higher fitness.
+
+**Explanation:** Speed enhances a slime’s ability to dodge tower attacks, such as Acid and Laser towers, increasing its survival time. In evolutionary terms, slimes that survive longer have higher fitness because they have more opportunities to reproduce and pass on their speed trait.
+</details>
+
+
+86. **In a population of slimes, which factor most directly affects their evolutionary fitness?**
+    
+    A. The ability to survive and reproduce under specific environmental conditions. <br>
+    B. The mutation rate of new traits. <br>
+    C. The total population size. <br>
+    D. The variety of traits present in the population. <br>
+
+  **Min gen:** 3
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. The ability to survive and reproduce under specific environmental conditions.
+
+**Explanation:** Fitness depends on how well slimes survive and reproduce in their environment, directly impacting which traits persist.
+</details>
+
+
+87. **Why might evolutionary fitness decrease in a population?**
+    
+    A. Traits that were once advantageous become less useful under new conditions. <br>
+    B. The environment remains stable over time. <br>
+    C. All individuals develop advantageous traits. <br>
+    D. All organisms reproduce equally successfully. <br>
+
+  **Min gen:** 4
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Traits that were once advantageous become less useful under new conditions.
+
+**Explanation:** Changes in the environment can render certain traits less advantageous, reducing the fitness of individuals with those traits.
+</details>
+
+88. **In Shep.Herd, how does using diverse towers impact slime populations?`**
+    
+    A. It creates varying selection pressures, favoring different traits. <br>
+    B. It eliminates the strongest slimes entirely. <br>
+    C. It increases the fitness of all traits equally. <br>
+    D. It stops slimes from reproducing successfully. <br>
+
+  **Min gen:** 4
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. It creates varying selection pressures, favoring different traits.
+
+**Explanation:** Diverse towers introduce multiple selection pressures, promoting traits that enhance survival and reproductive success under different conditions.
+</details>
+
+
+89. **How does fitness contribute to trait evolution in a population?**
+    
+    A. Traits that improve fitness are passed on more frequently. <br>
+    B. Fitness causes all traits to become equally common. <br>
+    C. Traits that reduce fitness become dominant. <br>
+    D. Fitness prevents new traits from appearing. <br>
+
+  **Min gen:** 3
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Traits that improve fitness are passed on more frequently.
+
+**Explanation:** Traits that enhance fitness are more likely to be inherited, shaping the evolution of the population.
+</details>
+
+
+90. **Why is reproductive success critical in determining evolutionary fitness?**
+    
+    A. Fitness depends on contributing traits to the next generation. <br>
+    B. Traits cannot be passed on without reproduction. <br>
+    C. Reproductive success is unrelated to survival. <br>
+    D. Reproduction ensures all traits are equally distributed. <br>
+
+  **Min gen:** 4
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Fitness depends on contributing traits to the next generation.
+
+**Explanation:** Fitness measures an organism’s ability to pass on traits, which requires reproductive success.
+</details>
+
+
+91. **In Shep.Herd, what might reduce the fitness of acid-resistant slimes?**
+    
+    A. The removal of acid towers from gameplay. <br>
+    B. The introduction of fire towers. <br>
+    C. The mutation of new traits in the population. <br>
+    D. The population size increasing randomly. <br>
+
+  **Min gen:** 4
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. The removal of acid towers from gameplay.
+
+**Explanation:** Acid resistance becomes less advantageous when acid towers are no longer a selection pressure, reducing the fitness of those traits.
+</details>
+
+
+92. **How do fitness and natural selection interact in evolution?**
+    
+    A. Natural selection favors traits that improve fitness, driving evolution. <br>
+    B. Fitness has no role in natural selection. <br>
+    C. Natural selection reduces fitness in all populations. <br>
+    D. Fitness ensures all individuals survive equally. <br>
+
+  **Min gen:** 4
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Natural selection favors traits that improve fitness, driving evolution.
+
+**Explanation:** Traits that enhance fitness are selected for, guiding the evolution of populations over time.
+</details>
+
+
+93. **Which statement best summarizes evolutionary fitness?**
+    
+    A. Fitness is the ability to survive and reproduce, passing on advantageous traits. <br>
+    B. Fitness measures survival alone. <br>
+    C. Fitness ensures all traits are equally successful. <br>
+    D. Fitness eliminates variation in a population. <br>
+
+  **Min gen:** 2
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Fitness is the ability to survive and reproduce, passing on advantageous traits.
+
+**Explanation:** Fitness includes both survival and reproduction, focusing on the passing of traits to future generations.
+</details>
+
+
+94. **Which type of graph is best for showing changes in a slime population's speed over time?**
+    
+    A. Line graph. <br>
+    B. Bar graph. <br>
+    C. Pie chart. <br>
+    D. Scatter plot. <br>
+
+  **Min gen:** 5
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Line graph.
+
+**Explanation:** Line graphs effectively display trends over time, such as changes in population speed across generations.
+</details>
+
+
+95. **What type of graph would best represent the percentage of slimes with different traits?**
+    
+    A. Pie chart. <br>
+    B. Line graph. <br>
+    C. Scatter plot. <br>
+    D. Histogram. <br>
+
+  **Min gen:** 5
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Pie chart.
+
+**Explanation:** Pie charts are used to show proportions, such as the percentage of slimes with specific traits.
+</details>
+
+
+96. **Which graph type is most appropriate for comparing slime survival rates across tower types?**
+    
+    A. Bar graph. <br>
+    B. Scatter plot. <br>
+    C. Line graph. <br>
+    D. Pie chart. <br>
+
+  **Min gen:** 5
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Bar graph.
+
+**Explanation:** Bar graphs are ideal for comparing values across categories, such as survival rates for different tower types.
+</details>
+
+
+97. **If you want to show the relationship between slime speed and survival, which graph type should you use?**
+    
+    A. Scatter plot. <br>
+    B. Line graph. <br>
+    C. Bar graph. <br>
+    D. Pie chart. <br>
+
+  **Min gen:** 5
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Scatter plot.
+
+**Explanation:** Scatter plots show relationships between two variables, like speed and survival.
+</details>
+
+
+98. **Why are line graphs unsuitable for displaying data that compares survival across different tower types?**
+    
+    A. Line graphs are designed to show trends over time, not categorical comparisons. <br>
+    B. Line graphs do not work for numerical data. <br>
+    C. Line graphs do not allow multiple data points. <br>
+    D. Line graphs are harder to read than other graph types. <br>
+
+  **Min gen:** 5
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Line graphs are designed to show trends over time, not categorical comparisons.
+
+**Explanation:** Line graphs are used for trends, while bar graphs are better for comparing categories.
+</details>
+
+
+99. **A dataset includes the number of slimes with fire resistance over three generations. Which graph should you use?**
+    
+    A. Line graph. <br>
+    B. Scatter plot. <br>
+    C. Pie chart. <br>
+    D. Histogram. <br>
+
+  **Min gen:** 4
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Line graph.
+
+**Explanation:** Line graphs are ideal for showing changes in numbers across multiple generations.
+</details>
+
+
+100. **What graph type is best for visualizing the frequency of slime speeds in a population?**
+    
+      A. Histogram. <br>
+      B. Pie chart. <br>
+      C. Scatter plot. <br>
+      D. Line graph. <br>
+
+  **Min gen:** 5
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Histogram.
+
+**Explanation:** Histograms display the frequency distribution of data, such as slime speeds in a population.
+</details>
+
+
+101. **What is the primary purpose of a scatter plot?**
+     
+      A. Displaying relationships or correlations between two variables. <br>
+      B. Showing the distribution of one variable. <br>
+      C. Comparing categories. <br>
+      D. Showing proportions of a whole. <br>
+
+  **Min gen:** 5
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Displaying relationships or correlations between two variables.
+
+**Explanation:** Scatter plots are designed to display relationships or correlations between two variables.
+</details>
+
+
+102. **Which graph type would you choose to display the distribution of slime speeds across the population?**
+    
+      A. Histogram. <br>
+      B. Line graph. <br>
+      C. Bar graph. <br>
+      D. Scatter plot. <br>
+
+  **Min gen:** 5
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Histogram.
+
+**Explanation:** Histograms show the frequency of data within intervals, ideal for speed distributions.
+</details>
+
+
+103. **A dataset includes survival rates of slimes across five different towers. What graph type should you use?**
+    
+      A. Bar graph. <br>
+      B. Line graph. <br>
+      C. Scatter plot. <br>
+      D. Pie chart. <br>
+
+  **Min gen:** 5
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Bar graph.
+
+**Explanation:** Bar graphs are best for comparing categories, like survival rates across towers.
+</details>
+
+
+104. **Which graph type is most effective for showing population trends across generations?**
+    
+      A. Line graph. <br>
+      B. Bar graph. <br>
+      C. Pie chart. <br>
+      D. Scatter plot. <br>
+
+  **Min gen:** 5
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Line graph.
+
+**Explanation:** Line graphs show changes over time, making them effective for displaying population trends.
+</details>
+
+
+105. **What graph type allows you to identify clusters or outliers in the data?**
+    
+      A. Scatter plot. <br>
+      B. Pie chart. <br>
+      C. Bar graph. <br>
+      D. Line graph. <br>
+
+  **Min gen:** 5
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Scatter plot.
+
+**Explanation:** Scatter plots are useful for identifying patterns, clusters, or outliers in data.
+</details>
+
+
+106. **Why is a pie chart unsuitable for showing changes in slime traits over time?**
+    
+      A. Pie charts are static and do not show trends or changes over time. <br>
+      B. Pie charts cannot display categorical data. <br>
+      C. Pie charts cannot display numerical data. <br>
+      D. Pie charts are too complex for trait data. <br>
+
+  **Min gen:** 5
+  
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. 
+
+**Explanation:** Pie charts are static and only show proportions at a single time point, not trends over time.
+</details>
+
+
+107. **A dataset shows the relationship between slime lifespan and speed. Which graph type should you use?**
+    
+      A. Scatter plot. <br>
+      B. Line graph. <br>
+      C. Pie chart. <br>
+      D. Bar graph. <br>
+
+  **Min gen:** 5
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Scatter plot.
+
+**Explanation:** Scatter plots are ideal for analyzing relationships between two continuous variables.
+</details>
+
+
+108. **Which graph type is least appropriate for comparing the number of slimes with different traits?**
+    
+      A. Line graph. <br>
+      B. Bar graph. <br>
+      C. Pie chart. <br>
+      D. Histogram. <br>
+
+  **Min gen:** 5
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Line graph.
+
+**Explanation:** Line graphs are not ideal for categorical comparisons; bar graphs or pie charts are better suited.
+</details>
+
+
+109. **What is the mean of the dataset {3, 5, 7, 7, 10}?**
+    
+      A. 6.4 <br>
+      B. 2 <br>
+      C. 8 <br>
+      D. 12 <br>
+
+  **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. 6.4
+
+**Explanation:** The mean is calculated by summing the values (3 + 5 + 7 + 7 + 10 = 32) and dividing by the number of values (32 ÷ 5 = 6.4).
+</details>
+
+
+110. **What is the median of the dataset {4, 6, 8, 10, 12}?**
+    
+      A. 8 <br>
+      B. 3 <br>
+      C. 5 <br>
+      D. 12 <br>
+
+  **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. 8
+
+**Explanation:** 
+</details>
+
+
+111. **In the dataset {2, 4, 6, 6, 8, 10}, what is the mode?**
+    
+      A. 6 <br>
+      B. 2 <br>
+      C. 4 <br>
+      D. 8 <br>
+
+  **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. 6
+
+**Explanation:** The mode is the most frequently occurring value, which is 6 in this dataset.
+</details>
+
+
+112. **What is the range of the dataset {2, 5, 7, 9, 12}?**
+    
+      A. 10 <br>
+      B. 3 <br>
+      C. 6 <br>
+      D. 14 <br>
+
+  **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. 10
+
+**Explanation:** The range is the difference between the maximum and minimum values: 12 - 2 = 10.
+</details>
+
+
+113. **Which statistical term refers to the most frequently occurring value in a dataset?**
+    
+      A. Mode. <br>
+      B. Mean. <br>
+      C. Median. <br>
+      D. Range. <br>
+
+  **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Mode.
+
+**Explanation:** The mode identifies the value that appears most often in a dataset.
+</details>
+
+
+114. **What is the mean of the dataset {10, 15, 20, 25}?**
+    
+      A. 17.5 <br>
+      B. 15 <br>
+      C. 20 <br>
+      D. 22.5 <br>
+
+  **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. 17.5
+
+**Explanation:** The mean is calculated by summing the values (10 + 15 + 20 + 25 = 70) and dividing by 4 (70 ÷ 4 = 17.5).
+</details>
+
+
+115. **Which graph type best shows the mean of a dataset?**
+    
+      A. Bar graph. <br>
+      B. Line graph. <br>
+      C. Scatter plot. <br>
+      D. Pie chart. <br>
+
+  **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. Bar graph.
+
+**Explanation:** Bar graphs can include a line or marker to represent the mean of a dataset.
+</details>
+
+
+116. **What is the median of the dataset {3, 8, 10, 15, 20}?**
+    
+      A. 10 <br>
+      B. 8 <br>
+      C. 12 <br>
+      D. 15 <br>
+
+  **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. 10
+
+**Explanation:** The median is the middle value, which is 10 in this dataset.
+</details>
+
+
+117. **In a dataset where all values are identical, what are the mean, median, and mode?**
+    
+      A. All three are the same value. <br>
+      B. Mean and median are equal, but mode differs. <br>
+      C. Mean and mode are equal, but median differs. <br>
+      D. Median and mode are equal, but mean differs. <br>
+
+  **Min gen:** 1
+    
+<details>
+<summary>Click to see the answer</summary>
+
+**Answer:** A. All three are the same value.
+
+**Explanation:** When all values are identical, the mean, median, and mode are equal.
+</details>
