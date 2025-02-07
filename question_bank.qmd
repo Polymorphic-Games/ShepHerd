@@ -19,6 +19,7 @@ This document outlines the key learning objectives for Shep.Herd, along with cor
     4. Compare multiple graphs to determine common patterns or trends across different datasets.
     
     Related questions: 1 - 17
+    DOK: 1, 2
   
 2. **Students will define natural selection and identify its components.**
     
@@ -26,12 +27,14 @@ This document outlines the key learning objectives for Shep.Herd, along with cor
     2. List the components of natural selection (variation, inheritance, selection, time).
     
     Related questions: 18 - 23, 62, 64
+    DOK: 1
     
 3. **Students will describe variation and identify variation in traits within slime populations. (variation)**
     
     1. Identify adaptations among slimes, such as speed or resistance.
     
     Related questions: 21, 23 - 36, 62, 69
+    DOK: 1
     
 4. **Students will explain the mechanisms through which traits are passed from one generation to the next. (inheritance)**
     
@@ -40,6 +43,7 @@ This document outlines the key learning objectives for Shep.Herd, along with cor
     3. Predict which traits are likely to become prevalent in future generations based on parental traits and environmental challenges.
     
     Related questions: 33, 37 - 46, 62, 69
+    DOK: 1, 2
 
 5. **Students will describe selection pressures and analyze how they affect the prevalence of certain traits in slime populations. (selection)**
    
@@ -48,6 +52,7 @@ This document outlines the key learning objectives for Shep.Herd, along with cor
     3. Compare populations with different traits and identify which traits lead to greater success in survival and reproduction. 
     
     Related questions: 12, 47 - 59, 62, 67, 69
+    DOK: 1, 2, 3
 
 6. **Students will describe how traits in slime populations evolve over multiple generations in Shep.Herd. (time)**
    
@@ -55,6 +60,7 @@ This document outlines the key learning objectives for Shep.Herd, along with cor
     2. Predict evolutionary changes based on observed trends and data regarding traits and population dynamics over time.
     
     Related questions: 2, 9, 13, 60 - 69
+    DOK: 2
     
 7. **Students will explain how evolutionary fitness impacts reproductive success.**
     
@@ -63,6 +69,7 @@ This document outlines the key learning objectives for Shep.Herd, along with cor
     3. Explain how different factors affect evolutionary fitness and reproductive success.
     
     Related questions: 10, 70 - 93
+    DOK: 1, 2
     
 8. **Students will identify different graph types and choose the appropriate graph type for a given dataset.**
    
@@ -71,6 +78,7 @@ This document outlines the key learning objectives for Shep.Herd, along with cor
     3. Explain the rationale for choosing a specific graph type for a particular dataset.
     
     Related questions: 11, 13, 94 - 108
+    DOK: 1, 2
     
 9. **Students will define key statistical terms (mean, median, mode, range) and identify these elements on a graph.**
    
@@ -79,6 +87,7 @@ This document outlines the key learning objectives for Shep.Herd, along with cor
     3. Calculate the mean, median, mode, and range for a given dataset.
     
     Related questions: 109 - 117
+    DOK: 1
     
 
 
